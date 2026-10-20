@@ -1,0 +1,472 @@
+body {
+  background-color: #0b1122; /* Fondo oscuro principal */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /*font-family: "Nunito Sans", sans-serif;*/
+   font-family: "Montserrat", sans-serif;
+	margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #d1d5db; /* Fondo gris claro */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 2px solid #b0b5c0;
+}
+
+.logo-container .logo-img {
+  max-height: 40px;
+  width: auto;
+  display: block;
+}
+
+.nav-links a {
+  color: #7b78b8; /* Color azul-púrpura del menú superior */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #e5e7eb;
+  border: 1.5px solid #8b88c6;
+  border-radius: 20px;
+  padding: 5px 15px;
+  width: 250px;
+}
+
+.search-bar i {
+  color: #8b88c6;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+/* LAYOUT PRINCIPAL */
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* BAR */
+.sidebar {
+  width: 280px;
+  background-color: #3b3a6d; /* Morado/Azul oscuro */
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sidebar-header h3 {
+  color: #c0ca33; /* Amarillo/Verde lima */
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.sidebar-header h3 span {
+  font-size: 0.75rem;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.arrow-btn {
+  background-color: #ffffff;
+  color: #3b3a6d;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li {
+  color: #b0b5c0;
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 8px 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sidebar-menu li.active {
+  color: #c0ca33; /* Resaltado de tema activo */
+}
+
+.sidebar-submenu {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.sidebar-submenu li {
+  margin-bottom: 6px;
+}
+
+.sidebar-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* CONTENIDO */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-title {
+ 
+font-size: 2.2rem;
+margin-bottom: 25px;
+font-weight: 800;
+letter-spacing: 1px;
+font-family: "Montserrat", sans-serif;
+
+}
+
+.sub-title {
+    color: #a1b851;
+    font-size: 1.3rem;
+    margin: 30px 0 15px 0;
+    font-weight: 800;
+}
+
+.sub-title2 {
+    color: #0F1926;
+    font-size: 1.3rem;
+    margin: 30px 0 15px 0;
+    font-weight: 800;
+}
+
+/* GRID SUPERIOR */
+.content-grid-top {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 25px;
+}
+
+/* GRID INFERIOR */
+.content-grid-bottom {
+  display: grid;
+  grid-template-columns: 1fr 220px 220px;
+  gap: 25px;
+}
+
+/* TARJETAS DE TEXTO */
+.text-card {
+  background-color: #d1d5db; /* Fondo gris/blanco para el texto */
+  color: #111827;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 0.90rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+	margin: 0;
+}
+
+/* RECUADROS PARA LAS IMÁGENES INCRUSTADAS */
+.image-container {
+  border: 0px solid #c0ca33; 
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #0F1926;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen dentro del recuadro */
+  display: block;
+}
+
+.main-image {
+  height: 100%;
+  min-height: 280px;
+}
+
+.small-image {
+  height: 200px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1a1940; /* Fondo morado oscuro */
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /*margin-top: 5px;*/
+}
+
+.footer-logo .logo-img {
+  max-height: 50px;
+  width: auto;
+}
+
+.footer-info {
+  color: #a1b851;
+  font-size: 0.75rem;
+  text-align: center;
+  flex: 1;
+}
+
+.footer-info .disclaimer {
+  font-size: 0.65rem;
+  margin-top: 6px;
+  color: #a1b851;
+  line-height: 1.3;
+}
+
+/*menú*/
+.contenedor {
+display:block;
+}
+
+.contmain {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-weight: bold;
+}
+
+details {
+width: 100%;
+margin: 0 auto ;
+background: #5756BC;
+color:#7d8c46;
+box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+border-radius: 0px;
+border-bottom-right-radius: 120px;
+overflow: hidden;
+line-height: 1.5;
+letter-spacing: 1px;
+}
+
+.details2 {
+width: 100%;
+margin: 0 auto ;
+background: #262A47;
+color:#7d8c46;
+box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+border-radius: 0px;
+border-bottom-right-radius: 120px;
+overflow: hidden;
+line-height: 1.5;
+letter-spacing: 1px;
+
+}
+
+
+.summaryTemas {
+  padding: 1rem;   /*Personaliza encabezado de menú*/
+  display: block;
+  background: #5756BC;
+  padding-left: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  color: #a1b851;
+  font-size: 20px;
+
+}
+
+.summarySumarios {
+  padding: 1rem;   /*Personaliza encabezado de menú*/
+  display: block;
+  background: #262A47;
+  padding-left: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  color: #a1b851;
+  font-size: 20px;
+}
+
+
+
+summary::before {
+  content: "\f0aa";
+  font-family: "FontAwesome";
+  border-width: .1rem;
+  border-color: transparent transparent transparent  #a1b851;
+  position: absolute;
+  top: 1rem;
+  right:15px;
+  transform: rotate(0deg);
+  transform-origin: .1rem 50%;
+  transition: .40s transform ease;
+}
+
+details[open] > summary:before {
+  transform: rotate(180deg);
+}
+
+
+details summary::-webkit-details-marker {
+  display:none;
+	line-height: 1.5;
+letter-spacing: 1px;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  font-size: 12px;
+ list-style:disc; /* Elimina los números o las viñetas */
+  padding: 0;
+  margin: 20px;
+  line-height: 30px;
+  color: #a1b851;
+}
+
+ul>li>a{
+    color: #a1b851;
+    font-size: 12px;
+	 font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	}
+
+ul>li>a:hover{
+    color:#FFFFFF;
+	background: #a1b851;
+	padding: 5px;
+    font-size: 12px;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	
+
+}
+
+/*Pop up*/
+
+/* Ocultar el modal por defecto */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+/* Mostrar el modal cuando se activa el enlace #modal-video */
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Caja de contenido */
+.modal-contenido {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    background: #000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Botón de cerrar (X) */
+.btn-cerrar {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+[popover] {
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #111;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+[popover]:popover-open {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.boton {
+  background-color:#c0ca33;
+  border: none;
+  color: #0F1926;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight:bolder;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+/*Degradado texto*/
+.degradado {
+  background: linear-gradient(to bottom, #c0e528 20%,#57568C 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+	font-size: 40px;
+}
+
+.text-card>H3 {
+margin-bottom: -10px;
+}	
+
+.text-card>H2 {
+margin-bottom: -10px;
+}	
